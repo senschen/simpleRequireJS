@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>Title</title>
+</head>
+<body>
+
+<script src="./js/require.js"></script>
+<script>
+    require(['./js/mod1.js','./js/mod2.js'],function (mod1,mod2) {
+        alert(mod1 + '\n' + mod2);
+    });
+</script>
+</body>
+</html>
