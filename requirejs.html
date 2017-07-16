@@ -13,6 +13,14 @@
     require(['./js/mod1.js','./js/mod2.js'],function (mod1,mod2) {
         alert(mod1 + '\n' + mod2);
     });
+
+    require(['./js/mod1.js','./js/mod2.js'],function (mod1,mod2) {
+        console.log('试试会不会重复加载' + mod1 + '\n' + mod2);
+    });
+//
+//    require([],function () {
+//        alert('这个require啥依赖都没有');
+//    });
 </script>
 </body>
 </html>
